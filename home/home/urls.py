@@ -7,7 +7,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', include('page.urls')),
-    # path('price/', include()),
+    path('home/', include("page.urls")),
+    path('price/', include("price.urls")),
+    path('contacts/', include("us_contacts.urls")),
+    path("works/", include("works.urls")),
     path("", lambda request: redirect("/home/")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

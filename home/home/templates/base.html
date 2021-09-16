@@ -1,5 +1,6 @@
 {% load static %}
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8"/>
@@ -26,13 +27,16 @@
     </head>
 <!-- END HEAD -->
 <body>
-    {% block header %}
     {% include "parts/header.html" %}
-    {% endblock header %}
+    {% block our_works %}
+    {% block contacts %}
+    {% block work %}
     {% include "parts/slider.html" %}
     {% include "parts/bg_color.html" %}
+    {% endblock work %}
+    {% endblock contacts %}
+    {% endblock our_works %}
     {% include "parts/footer.html" %}
-
 
 
     <!-- Back To Top -->
