@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'price',
     'us_contacts',
     'works',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +133,4 @@ STATICFILES_DIRS = [BASE_DIR / "home" / "static"]
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = "user.User"

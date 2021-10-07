@@ -11,5 +11,6 @@ urlpatterns = [
     path('price/', include("price.urls")),
     path('contacts/', include("us_contacts.urls")),
     path("works/", include("works.urls")),
+    # path('user/', include("user.urls")),
     path("", lambda request: redirect("/home/")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
